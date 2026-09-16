@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Branding + GEO — Grupo — Septiembre</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#eef0f3;color:#1a1a2e;font-size:15px;padding:1.8rem 1rem}
+.page{max-width:980px;margin:0 auto}
+h1{font-size:24px;font-weight:700;margin-bottom:2px}
+.subtitle{font-size:13px;color:#6b7280}
+.section-title{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#4b5563;margin:28px 0 12px;display:flex;align-items:center;gap:8px}
+.section-title::after{content:'';flex:1;height:1px;background:#d1d5db}
+.brand-hero{border-radius:18px;padding:20px 24px;color:#fff;margin-bottom:12px}
+.brand-hero.lmk{background:linear-gradient(135deg,#7C3AED,#5B21B6)}
+.brand-hero.mhr{background:linear-gradient(135deg,#059669,#047857)}
+.brand-hero.tl{background:linear-gradient(135deg,#2563EB,#1D4ED8)}
+.brand-hero-name{font-size:18px;font-weight:700;opacity:.95}
+.brand-hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.brand-hero-stat .num{font-size:23px;font-weight:800;line-height:1.1}
+.brand-hero-stat .lbl{font-size:10.5px;opacity:.85;margin-top:2px}
+.chart-card{background:#fff;border-radius:16px;padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.chart-title{font-size:13px;font-weight:700;color:#374151;margin-bottom:10px}
+.store-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:6px}
+.store-card{background:#fff;border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);border-top:4px solid #ccc}
+.store-card.lmk{border-top-color:#7C3AED}
+.store-card.mhr{border-top-color:#059669}
+.store-card.tl{border-top-color:#2563EB}
+.store-name{font-size:13.5px;font-weight:700;color:#111827;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.store-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;white-space:nowrap}
+.badge-up{background:#D1FAE5;color:#047857}
+.badge-down{background:#FEE2E2;color:#B91C1C}
+.badge-flat{background:#F3F4F6;color:#6B7280}
+.store-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.sm-label{font-size:9.5px;color:#9CA3AF;text-transform:uppercase;letter-spacing:.02em}
+.sm-value{font-size:14px;font-weight:700;color:#1f2937}
+.insight-chip{background:#111827;color:#fff;border-radius:12px;padding:12px 16px;font-size:12.5px;line-height:1.5;margin-top:10px}
+.insight-chip b{color:#A5F3FC}
+.small-note{font-size:11px;color:#6b7280;margin:4px 0 10px}
+@media(max-width:700px){.brand-hero-grid{grid-template-columns:repeat(2,1fr)}.store-grid{grid-template-columns:1fr}}
+</style></head><body><div class="page">
+
+<h1>📍 Branding + GEO — Grupo</h1>
+<p class="subtitle">1 al 16 de septiembre 2026 · Landmark AR · Mihran AR · Tiendas Landmark · Inversión consolidada Meta + Google</p>
+
+<!-- ═══ COMPARATIVA ENTRE MARCAS ═══ -->
+<div class="chart-card">
+  <div class="chart-title">Alcance (Meta) y Facturación por marca</div>
+  <canvas id="chartMarcas" style="max-height:260px"></canvas>
+</div>
+
+<!-- ═══════════ LANDMARK AR ═══════════ -->
+<div class="brand-hero lmk">
+  <div class="brand-hero-name">🏠 Landmark AR — Consolidado</div>
+  <div class="brand-hero-grid">
+    <div class="brand-hero-stat"><div class="num">$1.864.096</div><div class="lbl">Inversión Geo/Branding (Meta+Google)</div></div>
+    <div class="brand-hero-stat"><div class="num">4,4M</div><div class="lbl">Impresiones totales</div></div>
+    <div class="brand-hero-stat"><div class="num">3,9M</div><div class="lbl">Alcance (Meta)</div></div>
+    <div class="brand-hero-stat"><div class="num">1.925</div><div class="lbl">Clics "Ver dirección"</div></div>
+  </div>
+  <div class="brand-hero-grid" style="margin-top:2px">
+    <div class="brand-hero-stat"><div class="num">$1.534M</div><div class="lbl">Facturación sucursales+VT</div></div>
+    <div class="brand-hero-stat"><div class="num">1.009</div><div class="lbl">Pedidos sucursales</div></div>
+    <div class="brand-hero-stat"><div class="num">1,05</div><div class="lbl">Frecuencia promedio (Meta)</div></div>
+    <div class="brand-hero-stat"><div class="num">5</div><div class="lbl">Sucursales con geo activa</div></div>
+  </div>
+</div>
+
+<div class="store-grid">
+  <div class="store-card lmk">
+    <div class="store-name">Alcorta <span class="store-badge badge-down">-6,7% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$699.136</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">1.484.237</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">1.297.662</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,06</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">721</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$407,4M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">470</div></div>
+    </div>
+  </div>
+  <div class="store-card lmk">
+    <div class="store-name">Unicenter <span class="store-badge badge-up">+135,5% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$339.915</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">824.503</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">715.218</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,03</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">436</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$465,9M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">175</div></div>
+    </div>
+  </div>
+  <div class="store-card lmk">
+    <div class="store-name">Norcenter <span class="store-badge badge-down">-19,9% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$242.285</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">721.602</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">652.383</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,03</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">248</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$256,4M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">111</div></div>
+    </div>
+  </div>
+  <div class="store-card lmk">
+    <div class="store-name">Arenales <span class="store-badge badge-down">-21,3% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$398.777</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">788.393</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">636.576</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,05</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">359</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$92,6M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">87</div></div>
+    </div>
+  </div>
+  <div class="store-card lmk">
+    <div class="store-name">Pilar <span class="store-badge badge-down">-3,3% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$186.198</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">597.721</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">549.979</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,03</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">161</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$93,5M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">97</div></div>
+    </div>
+  </div>
+  <div class="store-card lmk">
+    <div class="store-name">Palmas del Pilar <span class="store-badge badge-down">-29,7% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">Sin geo activa</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$88,3M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">69</div></div>
+    </div>
+  </div>
+</div>
+<div class="insight-chip">📌 <b>Unicenter</b> crece +135,5% vs 2025 con la menor inversión geo del grupo — el crecimiento no viene del presupuesto ahí. <b>Palmas del Pilar</b> no tiene campaña geo propia (ni Meta ni Google) y es la sucursal con peor caída (-29,7%) — candidata clara para activar geo dedicada.</div>
+
+<!-- ═══════════ MIHRAN AR ═══════════ -->
+<div class="brand-hero mhr">
+  <div class="brand-hero-name">🧶 Mihran AR — Consolidado</div>
+  <div class="brand-hero-grid">
+    <div class="brand-hero-stat"><div class="num">$1.409.768</div><div class="lbl">Inversión Geo/Branding (Meta+Google)</div></div>
+    <div class="brand-hero-stat"><div class="num">4,1M</div><div class="lbl">Impresiones totales</div></div>
+    <div class="brand-hero-stat"><div class="num">3,6M</div><div class="lbl">Alcance (Meta)</div></div>
+    <div class="brand-hero-stat"><div class="num">648</div><div class="lbl">Clics "Ver dirección"</div></div>
+  </div>
+  <div class="brand-hero-grid" style="margin-top:2px">
+    <div class="brand-hero-stat"><div class="num">$377M</div><div class="lbl">Facturación sucursales</div></div>
+    <div class="brand-hero-stat"><div class="num">384</div><div class="lbl">Pedidos sucursales</div></div>
+    <div class="brand-hero-stat"><div class="num">1,03</div><div class="lbl">Frecuencia promedio (Meta)</div></div>
+    <div class="brand-hero-stat"><div class="num">7</div><div class="lbl">Sucursales con geo activa</div></div>
+  </div>
+</div>
+
+<div class="store-grid">
+  <div class="store-card mhr">
+    <div class="store-name">Coronel Díaz <span class="store-badge badge-down">-44,2% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$330.058</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">955.196</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">787.654</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,05</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">143</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$19,2M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">33</div></div>
+    </div>
+  </div>
+  <div class="store-card mhr">
+    <div class="store-name">Norcenter <span class="store-badge badge-up">+50,2% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$347.454</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">674.744</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">554.888</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,03</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">241</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$79,9M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">88</div></div>
+    </div>
+  </div>
+  <div class="store-card mhr">
+    <div class="store-name">Unicenter <span class="store-badge badge-down">-15,1% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$292.953</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">697.912</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">598.150</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,03</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">207</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$87,2M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">108</div></div>
+    </div>
+  </div>
+  <div class="store-card mhr">
+    <div class="store-name">Arenales <span class="store-badge badge-up">+6,3% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$258.126</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">985.348</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">909.979</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,01</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">46</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$167,1M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">109</div></div>
+    </div>
+  </div>
+  <div class="store-card mhr">
+    <div class="store-name">Pilar <span class="store-badge badge-flat">s/d ventas</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$56.503</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">155.321</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">130.681</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,02</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">11</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">—</div></div>
+    </div>
+  </div>
+  <div class="store-card mhr">
+    <div class="store-name">Palmas del Pilar <span class="store-badge badge-up">+72,2% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$81.123 <span style="font-size:9px;color:#9CA3AF">(solo Meta)</span></div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">409.613</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">406.807</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,01</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$23,6M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">46</div></div>
+    </div>
+  </div>
+  <div class="store-card mhr">
+    <div class="store-name">Alcorta <span class="store-badge badge-flat">s/d ventas</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inversión total</div><div class="sm-value">$43.551 <span style="font-size:9px;color:#9CA3AF">(solo Meta)</span></div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">206.996</div></div>
+      <div><div class="sm-label">Alcance</div><div class="sm-value">200.553</div></div>
+      <div><div class="sm-label">Frecuencia</div><div class="sm-value">1,03</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">—</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">—</div></div>
+    </div>
+  </div>
+</div>
+<div class="insight-chip">📌 <b>Norcenter</b> y <b>Palmas del Pilar</b> crecen fuerte (+50% y +72%) con inversión geo relativamente baja. <b>Coronel Díaz</b> es la más floja (-44,2%) pese a tener el mayor alcance e impresiones del grupo — la inversión más alta no se está traduciendo en crecimiento ahí.</div>
+
+<!-- ═══════════ TIENDAS LANDMARK ═══════════ -->
+<div class="brand-hero tl">
+  <div class="brand-hero-name">🛋️ Tiendas Landmark — Consolidado</div>
+  <div class="brand-hero-grid">
+    <div class="brand-hero-stat"><div class="num">$422.493</div><div class="lbl">Inversión Geo/Branding (Meta+Google)</div></div>
+    <div class="brand-hero-stat"><div class="num">985.930</div><div class="lbl">Impresiones totales</div></div>
+    <div class="brand-hero-stat"><div class="num">939.306</div><div class="lbl">Alcance (Meta)</div></div>
+    <div class="brand-hero-stat"><div class="num">83</div><div class="lbl">Clics "Ver dirección"</div></div>
+  </div>
+  <div class="brand-hero-grid" style="margin-top:2px">
+    <div class="brand-hero-stat"><div class="num">$515M</div><div class="lbl">Facturación sucursales+VT</div></div>
+    <div class="brand-hero-stat"><div class="num">4.120</div><div class="lbl">Pedidos sucursales</div></div>
+    <div class="brand-hero-stat"><div class="num">1,03</div><div class="lbl">Frecuencia promedio (Meta)</div></div>
+    <div class="brand-hero-stat"><div class="num">2</div><div class="lbl">Sucursales con geo activa</div></div>
+  </div>
+</div>
+<p class="small-note">La inversión de Meta en Tiendas Landmark es una única campaña Awareness Geo genérica ($260.539) que no se puede desagregar por sucursal — se suma solo al consolidado de marca, no a las fichas individuales.</p>
+
+<div class="store-grid">
+  <div class="store-card tl">
+    <div class="store-name">Unicenter <span class="store-badge badge-up">+17,6% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inv. Google</div><div class="sm-value">$42.862</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">13.628</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">58</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$399,3M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">3.075</div></div>
+    </div>
+  </div>
+  <div class="store-card tl">
+    <div class="store-name">Palmas del Pilar <span class="store-badge badge-down">-6,1% vs 2025</span></div>
+    <div class="store-metrics">
+      <div><div class="sm-label">Inv. Google</div><div class="sm-value">$8.631</div></div>
+      <div><div class="sm-label">Impresiones</div><div class="sm-value">2.783</div></div>
+      <div><div class="sm-label">Ver dirección</div><div class="sm-value">25</div></div>
+      <div><div class="sm-label">Facturación</div><div class="sm-value">$115,4M</div></div>
+      <div><div class="sm-label">Pedidos</div><div class="sm-value">1.045</div></div>
+    </div>
+  </div>
+</div>
+<div class="insight-chip">📌 Único punto que crece de la marca: <b>Unicenter (+17,6% vs 2025)</b>, concentrando casi toda la inversión y actividad geo en Google. <b>Palmas del Pilar</b> recibe 5x menos inversión y cae -6,1% — hay margen para balancear presupuesto entre ambas.</div>
+
+</div>
+<script>
+Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif";
+Chart.defaults.font.size=10;
+const gc='rgba(0,0,0,0.05)',tc='#6b7280';
+
+new Chart(document.getElementById('chartMarcas'),{
+  data:{labels:['Landmark AR','Mihran AR','Tiendas Landmark'],
+    datasets:[
+      {type:'bar',label:'Alcance (Meta)',data:[3851818,3588712,939306],backgroundColor:'#7C9BEA',borderRadius:8,yAxisID:'y'},
+      {type:'line',label:'Facturación (ARS)',data:[1533900000,376998000,514700000],borderColor:'#DC2626',backgroundColor:'#DC2626',tension:0.3,pointRadius:6,yAxisID:'y1'}
+    ]},
+  options:{responsive:true,plugins:{legend:{labels:{color:tc,boxWidth:12,padding:16}},
+    tooltip:{callbacks:{label:ctx=>ctx.dataset.type==='bar'?` Alcance: ${ctx.parsed.y.toLocaleString()}`:` Facturación: $${(ctx.parsed.y/1000000).toFixed(0)}M`}}},
+    scales:{
+      x:{ticks:{color:tc,font:{size:12,weight:'600'}},grid:{display:false}},
+      y:{position:'left',ticks:{color:tc,callback:v=>(v/1000000).toFixed(1)+'M'},grid:{color:gc},title:{display:true,text:'Alcance',color:tc,font:{size:10}}},
+      y1:{position:'right',ticks:{color:tc,callback:v=>'$'+(v/1000000).toFixed(0)+'M'},grid:{display:false},title:{display:true,text:'Facturación',color:tc,font:{size:10}}}
+    }}
+});
+</script>
+</body></html>
